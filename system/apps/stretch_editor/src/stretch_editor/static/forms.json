@@ -1,0 +1,118 @@
+{
+  "forms": [
+    {
+      "id": "haiku", "name": "Haiku", "family": "Short forms", "lines": 3, "syllables": [5, 7, 5], "meter": null,
+      "schemes": [{"id": "none", "label": "Unrhymed"}],
+      "guide": "Three lines of 5, 7 and 5 syllables. One or two concrete images from the piece that hold its whole meaning, with a cut (a pause or turn) between them. Plain words, present tense, no rhyme, no title, no explaining the image."
+    },
+    {
+      "id": "tanka", "name": "Tanka", "family": "Short forms", "lines": 5, "syllables": [5, 7, 5, 7, 7], "meter": null,
+      "schemes": [{"id": "none", "label": "Unrhymed"}],
+      "guide": "Five lines of 5, 7, 5, 7 and 7 syllables. The first three lines give an image; the last two turn it toward feeling or reflection. No rhyme."
+    },
+    {
+      "id": "cinquain", "name": "Cinquain", "family": "Short forms", "lines": 5, "syllables": [2, 4, 6, 8, 2], "meter": null,
+      "schemes": [{"id": "none", "label": "Unrhymed"}],
+      "guide": "Adelaide Crapsey's cinquain: five lines of 2, 4, 6, 8 and 2 syllables, mostly iambic, building to the long fourth line and dropping to a short, weighted last line. No rhyme."
+    },
+    {
+      "id": "limerick", "name": "Limerick", "family": "Short forms", "lines": 5, "syllables": [9, 9, 6, 6, 9], "meter": "anapestic",
+      "schemes": [{"id": "aabba", "label": "AABBA"}],
+      "guide": "Five lines. Lines 1, 2 and 5 have three stressed beats (about 8-9 syllables), lines 3 and 4 have two (about 5-6), in a bouncing da-da-DUM rhythm. It tells the whole piece's idea in limerick form with the punchline in the last line. The comic register is the form's, so lightness is expected, but keep the piece's subject and never mock its author."
+    },
+    {
+      "id": "clerihew", "name": "Clerihew", "family": "Short forms", "lines": 4, "syllables": null, "meter": null,
+      "schemes": [{"id": "aabb", "label": "AABB"}],
+      "guide": "Four lines of deliberately uneven length in two rhymed couplets. The first line names the piece's central figure or subject; the rest makes a wry, whimsical point about it."
+    },
+    {
+      "id": "shakespearean-sonnet", "name": "Shakespearean sonnet", "family": "Sonnets", "lines": 14, "syllables": null, "meter": "iambic pentameter",
+      "schemes": [
+        {"id": "abab-cdcd-efef-gg", "label": "ABAB CDCD EFEF GG"},
+        {"id": "abab-abab-cdcd-ee", "label": "ABAB ABAB CDCD EE"},
+        {"id": "abba-cddc-effe-gg", "label": "ABBA CDDC EFFE GG"}
+      ],
+      "guide": "Fourteen lines of iambic pentameter: three quatrains that develop the piece, then a closing couplet that turns or sums it up. Put the volta (the turn) at the couplet."
+    },
+    {
+      "id": "petrarchan-sonnet", "name": "Petrarchan sonnet", "family": "Sonnets", "lines": 14, "syllables": null, "meter": "iambic pentameter",
+      "schemes": [
+        {"id": "abbaabba-cdecde", "label": "ABBAABBA CDECDE"},
+        {"id": "abbaabba-cdcdcd", "label": "ABBAABBA CDCDCD"},
+        {"id": "abbaabba-cdedce", "label": "ABBAABBA CDEDCE"},
+        {"id": "abbaabba-cddcee", "label": "ABBAABBA CDDCEE"}
+      ],
+      "guide": "Fourteen lines of iambic pentameter: an octave (eight lines) that sets out a situation or problem, then a sestet (six lines) that answers or turns from it. The volta comes at line nine."
+    },
+    {
+      "id": "spenserian-sonnet", "name": "Spenserian sonnet", "family": "Sonnets", "lines": 14, "syllables": null, "meter": "iambic pentameter",
+      "schemes": [{"id": "abab-bcbc-cdcd-ee", "label": "ABAB BCBC CDCD EE"}],
+      "guide": "Fourteen lines of iambic pentameter in three interlocking quatrains, each picking up the last rhyme of the one before, and a closing couplet."
+    },
+    {
+      "id": "curtal-sonnet", "name": "Curtal sonnet", "family": "Sonnets", "lines": 11, "syllables": null, "meter": "iambic pentameter",
+      "schemes": [{"id": "abcabc-dbcdc", "label": "ABCABC DBCDC"}],
+      "guide": "Gerard Manley Hopkins's shortened sonnet: a six-line opening and a four-and-a-half-line close, the final line a short half-line (two or three syllables). Iambic pentameter otherwise."
+    },
+    {
+      "id": "villanelle", "name": "Villanelle", "family": "Repeating forms", "lines": 19, "syllables": null, "meter": "iambic pentameter", "repeats": true,
+      "schemes": [{"id": "aba-refrains", "label": "ABA ×5 + ABAA, two refrains"}],
+      "guide": "Nineteen lines: five tercets (ABA) and a closing quatrain (ABAA). Line 1 returns as lines 6, 12 and 18; line 3 returns as lines 9, 15 and 19. Only the two refrain lines repeat, and they must gather meaning each time they return."
+    },
+    {
+      "id": "triolet", "name": "Triolet", "family": "Repeating forms", "lines": 8, "syllables": null, "meter": "iambic tetrameter", "repeats": true,
+      "schemes": [{"id": "abaaabab", "label": "ABaAabAB"}],
+      "guide": "Eight lines on two rhymes. Line 1 returns as lines 4 and 7; line 2 returns as line 8. The repeated lines should shift in meaning as the poem moves."
+    },
+    {
+      "id": "rondeau", "name": "Rondeau", "family": "Repeating forms", "lines": 15, "syllables": null, "meter": "iambic tetrameter", "repeats": true,
+      "schemes": [{"id": "aabba-aabr-aabbar", "label": "AABBA AABR AABBAR"}],
+      "guide": "Fifteen lines in three stanzas (5, 4 and 6 lines) on two rhymes. The opening words of line 1 return as a short unrhymed refrain (R) ending the second and third stanzas."
+    },
+    {
+      "id": "pantoum", "name": "Pantoum", "family": "Repeating forms", "lines": 12, "syllables": null, "meter": null, "repeats": true,
+      "schemes": [{"id": "abab-chain", "label": "ABAB, interlocking"}],
+      "guide": "Twelve lines in three quatrains rhymed ABAB. Lines 2 and 4 of each stanza become lines 1 and 3 of the next; in the last stanza, lines 2 and 4 are the poem's lines 3 and 1, so it ends where it began."
+    },
+    {
+      "id": "ghazal", "name": "Ghazal", "family": "Repeating forms", "lines": 10, "syllables": null, "meter": null, "repeats": true,
+      "schemes": [{"id": "aa-ba-ca", "label": "AA BA CA DA EA"}],
+      "guide": "Five self-contained couplets. Both lines of the first couplet, and the second line of every later couplet, end with the same word or phrase (the radif), preceded by a rhyme. Each couplet stands on its own like a separate jewel on one thread."
+    },
+    {
+      "id": "terza-rima", "name": "Terza rima", "family": "Stanza forms", "lines": 13, "syllables": null, "meter": "iambic pentameter",
+      "schemes": [{"id": "aba-bcb-cdc-ded-ee", "label": "ABA BCB CDC DED EE"}],
+      "guide": "Dante's interlocking tercets: the middle line of each tercet sets the rhyme for the next, closing on a couplet. Iambic pentameter, with forward momentum from stanza to stanza."
+    },
+    {
+      "id": "ottava-rima", "name": "Ottava rima", "family": "Stanza forms", "lines": 8, "syllables": null, "meter": "iambic pentameter",
+      "schemes": [{"id": "abababcc", "label": "ABABABCC"}],
+      "guide": "One eight-line stanza of iambic pentameter. The six alternating lines build; the closing couplet lands a twist, often wry."
+    },
+    {
+      "id": "rhyme-royal", "name": "Rhyme royal", "family": "Stanza forms", "lines": 7, "syllables": null, "meter": "iambic pentameter",
+      "schemes": [{"id": "ababbcc", "label": "ABABBCC"}],
+      "guide": "Chaucer's seven-line stanza of iambic pentameter, measured and stately, ending on a couplet."
+    },
+    {
+      "id": "ballad", "name": "Ballad stanzas", "family": "Stanza forms", "lines": 8, "syllables": [8, 6, 8, 6, 8, 6, 8, 6], "meter": "common meter",
+      "schemes": [
+        {"id": "abcb", "label": "ABCB (ballad)"},
+        {"id": "abab", "label": "ABAB (hymn)"}
+      ],
+      "guide": "Two quatrains in common meter: lines alternate four beats (8 syllables) and three beats (6 syllables), iambic, with the plain storytelling voice of a folk ballad."
+    },
+    {
+      "id": "heroic-couplets", "name": "Heroic couplets", "family": "Stanza forms", "lines": 10, "syllables": null, "meter": "iambic pentameter",
+      "schemes": [{"id": "aabb", "label": "AABBCC..."}],
+      "guide": "Ten lines of iambic pentameter in rhymed couplets, each couplet a balanced, closed unit, in the manner of Pope or Dryden."
+    }
+  ],
+  "rhymes": [
+    {"id": "", "label": "Any"},
+    {"id": "aabb", "label": "AABB"},
+    {"id": "abab", "label": "ABAB"},
+    {"id": "abba", "label": "ABBA"},
+    {"id": "none", "label": "Unrhymed"}
+  ]
+}

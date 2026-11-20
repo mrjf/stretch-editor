@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stretch Editor</title>
+<link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="doc-picker">
+    <select id="doc-select" aria-label="Document"></select>
+    <button id="new-doc" class="ghost" title="New document">New</button>
+    <button id="delete-doc" class="ghost" title="Delete this document">Delete</button>
+  </div>
+  <input id="doc-title" class="doc-title" aria-label="Document title">
+  <div class="model-picker">
+    <div class="segmented small" id="model-switch" aria-label="Show versions by"></div>
+    <button id="model-button" class="ghost" title="Choose which models write every size">Models</button>
+    <div id="model-popover" class="popover" hidden>
+      <p class="hint">Every size is written by each model you pick. Switch between them any time. Models from newly connected accounts appear here on their own. "plan" means it's covered by your subscription.</p>
+      <div id="model-list"></div>
+    </div>
+  </div>
+  <div class="settings">
+    <button id="settings-button" class="ghost icon" title="Settings" aria-label="Settings">
+      <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5Zm6.3 3.6-.9-.5a5.6 5.6 0 0 0 0-1.2l.9-.5a.6.6 0 0 0 .2-.8l-1-1.7a.6.6 0 0 0-.8-.2l-.9.5a5.4 5.4 0 0 0-1-.6V3a.6.6 0 0 0-.6-.6H7.8a.6.6 0 0 0-.6.6v1a5.4 5.4 0 0 0-1 .6l-.9-.5a.6.6 0 0 0-.8.2l-1 1.7a.6.6 0 0 0 .2.8l.9.5a5.6 5.6 0 0 0 0 1.2l-.9.5a.6.6 0 0 0-.2.8l1 1.7c.2.3.5.4.8.2l.9-.5c.3.2.6.4 1 .6v1c0 .3.3.6.6.6h2a.6.6 0 0 0 .6-.6v-1c.4-.2.7-.4 1-.6l.9.5c.3.2.6.1.8-.2l1-1.7a.6.6 0 0 0-.2-.8Z"/></svg>
+    </button>
+    <div id="settings-popover" class="popover" hidden>
+      <h4>Write ahead, for this document</h4>
+      <label class="setting-row"><span>Prose</span>
+        <select id="fill-prose">
+          <option value="open">Only sizes I open</option>
+          <option value="stops">Slider stops and pills</option>
+          <option value="dense">Many lengths</option>
+        </select></label>
+      <label class="setting-row"><span>Poetry</span>
+        <select id="fill-poetry">
+          <option value="open">Only sizes I open</option>
+          <option value="stops">Slider stops and pills</option>
+          <option value="grid">The whole grid</option>
+        </select></label>
+      <p class="hint" id="fill-count"></p>
+      <label class="setting-row"><span>Writers at once</span>
+        <span class="writers"><input type="range" id="writers-range" min="1" max="32"><input type="number" id="writers-num" min="1" max="32"></span></label>
+      <p class="hint">How many versions are written at the same time, nearest what's already written first.</p>
+      <h4>Display</h4>
+      <label class="model-row"><input type="checkbox" id="setting-costs"><span>Show model costs</span></label>
+    </div>
+  </div>
+  <div class="segmented" role="tablist" aria-label="Mode">
+    <button id="mode-prose" data-mode="prose" role="tab">Prose</button>
+    <button id="mode-poetry" data-mode="poetry" role="tab">Poetry</button>
+  </div>
+</header>
+
+<nav class="pills" id="pills" aria-label="Saved sizes"></nav>
+
+<main class="layout">
+  <section class="reader">
+    <div class="stage-wrap" id="stage-wrap">
+      <div id="stage" class="stage"></div>
+      <div id="writing-badge" class="writing-badge" hidden><span class="spinner"></span><span id="writing-text">Writing this version…</span></div>
+      <div id="editor" class="editor" hidden>
+        <textarea id="editor-text" spellcheck="true" placeholder="Write your document at any length."></textarea>
+        <div class="editor-actions">
+          <span class="editor-hint" id="editor-hint"></span>
+          <button id="editor-cancel" class="ghost">Cancel</button>
+          <button id="editor-save" class="primary">Save and lock</button>
+        </div>
+      </div>
+    </div>
+    <div class="zoom" id="zoom-row">
+      <span class="zoom-end">Shorter</span>
+      <div class="zoom-track">
+        <input type="range" id="zoom" min="0" max="10" step="1" aria-label="Zoom length">
+        <div class="zoom-ticks" id="zoom-ticks"></div>
+      </div>
+      <span class="zoom-end">Longer</span>
+    </div>
+    <div class="status" id="status"></div>
+  </section>
+
+  <aside class="panel">
+    <div class="tabs" role="tablist">
+      <button class="tab active" data-tab="size" role="tab">Size</button>
+      <button class="tab" data-tab="prompts" role="tab">Prompts</button>
+    </div>
+
+    <div class="tab-body" data-body="size">
+      <div id="sliders"></div>
+      <div class="verse-row" id="meter-row" hidden>
+        <span class="verse-label">Rhythm</span>
+        <div class="segmented small" id="meter-switch">
+          <button data-meter="">Free</button>
+          <button data-meter="iambic-pentameter" title="da-DUM ×5, as in Shakespeare's sonnets">Iambic</button>
+          <button data-meter="trochaic-tetrameter" title="DUM-da ×4, as in 'Tyger Tyger, burning bright'">Trochaic</button>
+          <button data-meter="anapestic-tetrameter" title="da-da-DUM ×4, the Dr. Seuss rhythm">Anapestic (Seuss)</button>
+        </div>
+      </div>
+      <div class="grid-pad" id="grid-pad" hidden>
+      <div class="grid-y">Lines</div>
+      <div class="grid-wrap">
+        <div class="grid-cells" id="grid-cells"></div>
+        <div class="grid-x"><span>Syllables per line</span></div>
+      </div>
+    </div>
+      <div class="verse-row" id="rhyme-row" hidden>
+        <span class="verse-label">Rhyme</span>
+        <div class="segmented small" id="rhyme-switch"></div>
+      </div>
+      <div class="forms" id="form-row" hidden>
+        <div class="forms-head"><span class="verse-label">Forms</span>
+          <select id="scheme-select" hidden aria-label="Rhyme scheme"></select></div>
+        <div id="form-list"></div>
+      </div>
+
+      <div class="actions">
+        <button id="act-edit">Edit</button>
+        <button id="act-lock">Lock</button>
+        <button id="act-rewrite">Rewrite</button>
+        <button id="act-pill">Save as pill</button>
+        <button id="act-tweet" class="wide-cell">Preview as a tweet</button>
+      </div>
+      <div class="fill">
+        <p class="bg-text" id="bg-text"></p>
+        <div class="progress" id="bg-progress" hidden><div></div></div>
+        <p class="hint" id="bg-cost"></p>
+      </div>
+      <h3>Versions</h3>
+      <ol class="versions" id="versions"></ol>
+    </div>
+
+    <div class="tab-body" data-body="prompts" hidden>
+      <label class="field">
+        <span>What you're going for</span>
+        <textarea id="brief" rows="5" placeholder="Audience, tone, what must survive at every size."></textarea>
+      </label>
+      <label class="field">
+        <span>Notes for this size <em id="note-size"></em></span>
+        <textarea id="size-note" rows="3" placeholder="Anything specific to this length."></textarea>
+      </label>
+      <h3>Saved sizes</h3>
+      <div id="pill-notes"></div>
+    </div>
+  </aside>
+</main>
+<div id="flash" class="flash" hidden></div>
+<div id="tweet" class="modal" hidden>
+  <div class="modal-card tweet-card" role="dialog" aria-label="Tweet preview">
+    <div class="modal-head"><h3>Tweet preview</h3><button id="tweet-close" class="ghost">Close</button></div>
+    <div class="modal-body">
+      <p class="hint" id="tweet-note"></p>
+      <div class="tweet-frame" id="tweet-frame"><span class="spinner"></span></div>
+      <div class="tweet-controls">
+        <label>Name <input id="tweet-name"></label>
+        <label>Handle <input id="tweet-handle"></label>
+        <div class="segmented small" id="tweet-theme"><button data-theme="light" class="active">Light</button><button data-theme="dark">Dark</button></div>
+        <button id="tweet-copy">Copy text</button>
+      </div>
+      <p class="hint" id="tweet-who"></p>
+    </div>
+  </div>
+</div>
+<div id="log" class="modal" hidden>
+  <div class="modal-card" role="dialog" aria-label="How this was written">
+    <div class="modal-head"><h3>How this was written</h3><button id="log-close" class="ghost">Close</button></div>
+    <div id="log-body" class="modal-body"></div>
+  </div>
+</div>
+<script type="module" src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160" role="img" aria-labelledby="title desc">
+  <title id="title">Stretch Editor</title>
+  <desc id="desc">A warm paper writing desk with a length slider stretching one word into a poem and paragraphs.</desc>
+  <rect width="240" height="160" rx="12" fill="#e8e1d4"/>
+  <rect x="9" y="9" width="222" height="142" rx="8" fill="#fbf8f2"/>
+  <path d="M9 34h222M9 126h222" stroke="#e3dccd"/>
+  <text x="19" y="25" font-family="Georgia,serif" font-size="12" fill="#1f1d1a">Stretch Editor</text>
+  <rect x="173" y="17" width="47" height="11" rx="5" fill="#f6dfd5"/>
+  <text x="181" y="25" font-family="sans-serif" font-size="6" fill="#8b442e">Word Spring</text>
+  <text x="22" y="68" font-family="Georgia,serif" font-size="15" fill="#1f1d1a">Wonder</text>
+  <path d="m78 72 9 0m-3-3 3 3-3 3" fill="none" stroke="#d26645" stroke-linecap="round"/>
+  <rect x="97" y="45" width="49" height="68" rx="4" fill="#f4efe5"/>
+  <text x="104" y="59" font-family="Georgia,serif" font-size="8" fill="#1f1d1a">A small</text>
+  <rect x="102" y="63" width="37" height="12" rx="2" fill="none" stroke="#8eafcb"/>
+  <text x="104" y="72" font-family="Georgia,serif" font-size="8" fill="#1f1d1a">bright idea</text>
+  <path d="M104 84h30m-30 8h24m-24 8h32" stroke="#b8afa1" stroke-width="2" stroke-linecap="round"/>
+  <path d="m151 72 9 0m-3-3 3 3-3 3" fill="none" stroke="#d26645" stroke-linecap="round"/>
+  <path d="M170 49h43m-43 6h38m-38 6h44m-44 6h30m-30 13h42m-42 6h44m-44 6h34m-34 13h44m-44 6h39" stroke="#b8afa1" stroke-width="2" stroke-linecap="round"/>
+  <text x="23" y="87" font-family="sans-serif" font-size="6" fill="#776f63">ONE WORD</text>
+  <path d="M26 137h188" stroke="#e3dccd" stroke-width="3" stroke-linecap="round"/>
+  <path d="M26 137h95" stroke="#d26645" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="26" cy="137" r="3" fill="#d26645"/>
+  <circle cx="121" cy="137" r="5" fill="#fbf8f2" stroke="#d26645" stroke-width="2"/>
+  <circle cx="214" cy="137" r="3" fill="#b8afa1"/>
+  <text x="19" y="147" font-family="sans-serif" font-size="5" fill="#776f63">Word</text>
+  <text x="113" y="147" font-family="sans-serif" font-size="5" fill="#776f63">Poem</text>
+  <text x="192" y="147" font-family="sans-serif" font-size="5" fill="#776f63">Paragraphs</text>
+</svg>

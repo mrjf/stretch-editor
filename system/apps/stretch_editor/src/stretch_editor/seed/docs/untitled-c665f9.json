@@ -1,0 +1,437 @@
+{
+ "id": "untitled-c665f9",
+ "title": "Stretch Text",
+ "mode": "poetry",
+ "brief": "",
+ "notes": {},
+ "pills": [
+  {
+   "id": "one-word",
+   "label": "One word",
+   "spec": {
+    "mode": "prose",
+    "unit": "words",
+    "value": 1
+   },
+   "note": ""
+  },
+  {
+   "id": "one-sentence",
+   "label": "One sentence",
+   "spec": {
+    "mode": "prose",
+    "unit": "sentences",
+    "value": 1
+   },
+   "note": ""
+  },
+  {
+   "id": "tweet",
+   "label": "Tweet",
+   "spec": {
+    "mode": "prose",
+    "unit": "chars",
+    "value": 280
+   },
+   "note": "Fits in a tweet. No hashtags or emoji."
+  },
+  {
+   "id": "one-paragraph",
+   "label": "One paragraph",
+   "spec": {
+    "mode": "prose",
+    "unit": "paragraphs",
+    "value": 1
+   },
+   "note": ""
+  },
+  {
+   "id": "one-line",
+   "label": "One line",
+   "spec": {
+    "mode": "poetry",
+    "lines": 1,
+    "syllables": 8
+   },
+   "note": ""
+  },
+  {
+   "id": "couplet",
+   "label": "Couplet",
+   "spec": {
+    "mode": "poetry",
+    "lines": 2,
+    "syllables": 8
+   },
+   "note": "A rhymed couplet."
+  },
+  {
+   "id": "quatrain",
+   "label": "Quatrain",
+   "spec": {
+    "mode": "poetry",
+    "lines": 4,
+    "syllables": 8
+   },
+   "note": ""
+  },
+  {
+   "id": "full",
+   "label": "Full",
+   "spec": {
+    "mode": "prose",
+    "unit": "sentences",
+    "value": 1
+   },
+   "note": ""
+  },
+  {
+   "id": "haiku",
+   "label": "Haiku",
+   "spec": {
+    "mode": "poetry",
+    "lines": 3,
+    "syllables": 6,
+    "form": "haiku"
+   },
+   "note": ""
+  },
+  {
+   "id": "limerick",
+   "label": "Limerick",
+   "spec": {
+    "mode": "poetry",
+    "lines": 5,
+    "syllables": 8,
+    "form": "limerick"
+   },
+   "note": ""
+  }
+ ],
+ "versions": {
+  "prose:p3@claude-opus-5-5": {
+   "spec": {
+    "mode": "prose",
+    "unit": "paragraphs",
+    "value": 3
+   },
+   "text": "Stretch text allows you to do semantic zooming, smoothly, through natural language documents. Zooming is a word we usually reserve for maps and images, where moving closer reveals finer detail. Semantic zooming borrows that motion but changes what it acts on, so you move by meaning rather than by magnification. Zoom out and you see the whole idea in a few words; zoom in and the same idea opens into fuller detail.\n\nWhat sets stretch text apart is that this zooming happens smoothly, not in a handful of fixed jumps. There are no stepped levels to click between and no separate summaries standing in for the real thing. Instead, the document stretches and contracts continuously, so every point between brief and full is a place you can stop. Each size of the text, short or long, is still the whole document, held at a different level of detail.\n\nThe territory for all of this is natural language documents: ordinary prose, written in words rather than drawn in pictures. That is the quietly surprising part, because a visual verb like zooming is being applied to sentences and paragraphs. A written document can hold many levels of detail, each one ready to be expanded or compressed. And the zoom is yours: stretch text allows you to move through natural language documents by meaning, smoothly, wherever you choose.",
+   "status": "ready",
+   "rev": 2,
+   "written_at": "2026-11-20T18:29:12+00:00",
+   "log_id": "20261120-102912-0fdaad13",
+   "model": "claude-opus-5-5",
+   "human_share": 0.0
+  },
+  "poetry:l6-y10@claude-opus-5-5": {
+   "spec": {
+    "mode": "poetry",
+    "lines": 6,
+    "syllables": 10
+   },
+   "text": "Stretch text allows you, as you read, to zoom\nnot through a lens but through what words convey:\nsemantic zooming, in to finer grain,\nor out to where the broader outlines stay.\n\nAnd smoothly, with no stair-step, this zoom flows\nthrough natural language documents, through prose.",
+   "status": "ready",
+   "rev": 2,
+   "written_at": "2026-11-20T18:29:20+00:00",
+   "log_id": "20261120-102920-212f5dd2",
+   "model": "claude-opus-5-5",
+   "human_share": 0.0
+  },
+  "poetry:l8-y10@claude-opus-5-5": {
+   "spec": {
+    "mode": "poetry",
+    "lines": 8,
+    "syllables": 10
+   },
+   "text": "Stretch text allows you, as you read, to zoom\nby meaning, not by magnifying sight,\nto stretch a line until its details bloom\nor fold it back into one sentence tight.\n\nAnd all of this, smoothly, without a seam:\nno steps, no jumps, as detail ebbs and flows,\none glide, continuous, a steady stream\nthrough natural language documents, through prose.",
+   "status": "ready",
+   "rev": 2,
+   "written_at": "2026-11-20T18:29:20+00:00",
+   "log_id": "20261120-102920-62255f39",
+   "model": "claude-opus-5-5",
+   "human_share": 0.0
+  },
+  "poetry:l1-y8@claude-opus-5-5": {
+   "spec": {
+    "mode": "poetry",
+    "lines": 1,
+    "syllables": 8
+   },
+   "text": "Stretch text lets you glide through prose's detail.",
+   "status": "ready",
+   "rev": 2,
+   "written_at": "2026-11-20T18:29:51+00:00",
+   "log_id": "20261120-102951-88459513",
+   "model": "claude-opus-5-5",
+   "human_share": 0.0
+  },
+  "poetry:l2-y8@claude-opus-5-5": {
+   "spec": {
+    "mode": "poetry",
+    "lines": 2,
+    "syllables": 8
+   },
+   "text": "Stretch text lets you zoom in and out\nsmoothly through what prose is about.",
+   "status": "ready",
+   "rev": 2,
+   "written_at": "2026-11-20T18:29:55+00:00",
+   "log_id": "20261120-102955-51a7236e",
+   "model": "claude-opus-5-5",
+   "human_share": 0.0
+  },
+  "poetry:l3-y8@claude-opus-5-5": {
+   "spec": {
+    "mode": "poetry",
+    "lines": 3,
+    "syllables": 8
+   },
+   "text": "Stretch text lets you zoom in and out\nby meaning, smoothly, not by size,\nthrough what the written word's about.",
+   "status": "ready",
+   "rev": 2,
+   "written_at": "2026-11-20T18:30:24+00:00",
+   "log_id": "20261120-103024-f65f99b3",
+   "model": "claude-opus-5-5",
+   "human_share": 0.0
+  },
+  "poetry:l4-y8@claude-opus-5-5": {
+   "spec": {
+    "mode": "poetry",
+    "lines": 4,
+    "syllables": 8
+   },
+   "text": "Stretch text allows you, as you read,\nto zoom by meaning, in and out,\nsmoothly, as far as you may need,\nthrough prose and all it is about.",
+   "status": "ready",
+   "rev": 2,
+   "written_at": "2026-11-20T18:30:36+00:00",
+   "log_id": "20261120-103036-b931a8a6",
+   "model": "claude-opus-5-5",
+   "human_share": 0.0
+  },
+  "poetry:l1-y1@claude-opus-5-5": {
+   "spec": {
+    "mode": "poetry",
+    "lines": 1,
+    "syllables": 1
+   },
+   "text": "Zoom.",
+   "status": "ready",
+   "rev": 2,
+   "written_at": "2026-11-20T18:30:42+00:00",
+   "log_id": "20261120-103042-1cfe817b",
+   "model": "claude-opus-5-5",
+   "human_share": 0.0
+  },
+  "poetry:l1-y4@claude-opus-5-5": {
+   "spec": {
+    "mode": "poetry",
+    "lines": 1,
+    "syllables": 4
+   },
+   "text": "Stretch text zooms smoothly.",
+   "status": "ready",
+   "rev": 2,
+   "written_at": "2026-11-20T18:31:21+00:00",
+   "log_id": "20261120-103121-310bdd2e",
+   "model": "claude-opus-5-5",
+   "human_share": 0.0
+  },
+  "prose:p1@claude-opus-5-5": {
+   "spec": {
+    "mode": "prose",
+    "unit": "paragraphs",
+    "value": 1
+   },
+   "text": "Stretch text allows you to do semantic zooming, smoothly, through natural language documents. Zooming is a word we usually reserve for maps and images, but here you move by meaning rather than by magnification. Zoom out and you see the whole idea in a few words; zoom in and the same idea opens into fuller detail. This happens smoothly, not in fixed jumps: the document stretches and contracts continuously, and each size is still the whole document. The territory is ordinary prose rather than pictures, and the zoom is yours to move through it wherever you choose.",
+   "status": "ready",
+   "rev": 2,
+   "written_at": "2026-11-20T18:32:08+00:00",
+   "log_id": "20261120-103208-c2bb9a2f",
+   "model": "claude-opus-5-5",
+   "human_share": 0.0
+  },
+  "prose:w8@claude-opus-5-5": {
+   "spec": {
+    "mode": "prose",
+    "unit": "words",
+    "value": 8
+   },
+   "text": "Stretch text lets you zoom semantically, smoothly, through written documents.",
+   "status": "ready",
+   "rev": 2,
+   "written_at": "2026-11-20T18:32:11+00:00",
+   "log_id": "20261120-103211-f068eafc",
+   "model": "claude-opus-5-5",
+   "human_share": 0.0
+  },
+  "prose:s1@claude-opus-5-5": {
+   "spec": {
+    "mode": "prose",
+    "unit": "sentences",
+    "value": 1
+   },
+   "text": "Stretch text allows you to do semantic zooming, smoothly, through natural language documents, moving in to more detail and out to less.",
+   "status": "ready",
+   "rev": 2,
+   "written_at": "2026-11-20T18:32:23+00:00",
+   "log_id": "20261120-103223-6074988a",
+   "model": "claude-opus-5-5",
+   "human_share": 0.0
+  },
+  "prose:c280@claude-opus-5-5": {
+   "spec": {
+    "mode": "prose",
+    "unit": "chars",
+    "value": 280
+   },
+   "text": "Stretch text allows you to do semantic zooming, smoothly, through natural language documents. As you zoom in, the writing expands to say more about its subject, and as you zoom out, it contracts to say less.",
+   "status": "ready",
+   "rev": 2,
+   "written_at": "2026-11-20T18:32:29+00:00",
+   "log_id": "20261120-103229-f162cf08",
+   "model": "claude-opus-5-5",
+   "human_share": 0.0
+  },
+  "prose:w1@claude-opus-5-5": {
+   "spec": {
+    "mode": "prose",
+    "unit": "words",
+    "value": 1
+   },
+   "text": "Zoom.",
+   "status": "ready",
+   "rev": 2,
+   "written_at": "2026-11-20T18:32:35+00:00",
+   "log_id": "20261120-103235-7101390c",
+   "model": "claude-opus-5-5",
+   "human_share": 0.0
+  },
+  "prose:s3@claude-opus-5-5": {
+   "spec": {
+    "mode": "prose",
+    "unit": "sentences",
+    "value": 3
+   },
+   "text": "Stretch text allows you to do semantic zooming, opening a piece of writing up into more detail or folding it down into less. The zoom happens smoothly, so the text seems to stretch and contract as you read. The idea borrows zooming from maps and images and brings it to writing, letting you travel through natural language documents.",
+   "status": "ready",
+   "rev": 2,
+   "written_at": "2026-11-20T18:32:50+00:00",
+   "log_id": "20261120-103250-7aeecd44",
+   "model": "claude-opus-5-5",
+   "human_share": 0.0
+  },
+  "prose:p2@claude-opus-5-5": {
+   "spec": {
+    "mode": "prose",
+    "unit": "paragraphs",
+    "value": 2
+   },
+   "text": "Stretch text allows you to do semantic zooming, smoothly, through natural language documents. Zooming is a word we usually reserve for maps and images, where moving closer reveals finer detail. Semantic zooming borrows that motion but changes what it acts on, so you move by meaning rather than by magnification. Zoom out and you see the whole idea in a few words; zoom in and the same idea opens into fuller detail.\n\nThis happens smoothly, not in a handful of fixed jumps, because the document stretches and contracts continuously. Every point between brief and full is a place you can stop, and each size is still the whole document. The territory is ordinary prose, written in words rather than drawn in pictures, and that is the quietly surprising part. And the zoom is yours: stretch text allows you to move through natural language documents by meaning, wherever you choose.",
+   "status": "ready",
+   "rev": 2,
+   "written_at": "2026-11-20T18:34:39+00:00",
+   "log_id": "20261120-103439-0f6d0413",
+   "model": "claude-opus-5-5",
+   "human_share": 0.0
+  },
+  "prose:s1": {
+   "spec": {
+    "mode": "prose",
+    "unit": "sentences",
+    "value": 1
+   },
+   "text": "Stretch text allows you to do semantic zooming, smoothly, through natural language documents.",
+   "status": "locked",
+   "rev": 2,
+   "written_at": "2026-11-20T18:28:12+00:00",
+   "human_share": 0.0
+  },
+  "prose:s7@claude-opus-5-5": {
+   "spec": {
+    "mode": "prose",
+    "unit": "sentences",
+    "value": 7
+   },
+   "text": "Stretch text allows you to do semantic zooming, smoothly, through natural language documents. Zooming is a word we usually reserve for maps and images, where moving closer reveals finer detail. Semantic zooming borrows that motion but changes what it acts on, so you move by meaning rather than by magnification. Zoom out and you see the whole idea in a few words; zoom in and the same idea opens into fuller detail.\n\nThis happens smoothly, not in a handful of fixed jumps: the document stretches and contracts continuously, and each size is still the whole document. The territory is ordinary prose, written in words rather than drawn in pictures, and that is the quietly surprising part. And the zoom is yours: stretch text allows you to move through natural language documents by meaning, wherever you choose.",
+   "status": "ready",
+   "rev": 2,
+   "written_at": "2026-11-20T19:20:54+00:00",
+   "log_id": "20261120-112054-201ed200",
+   "model": "claude-opus-5-5",
+   "human_share": 0.0
+  },
+  "prose:s4@claude-opus-5-5": {
+   "spec": {
+    "mode": "prose",
+    "unit": "sentences",
+    "value": 4
+   },
+   "text": "Stretch text allows you to do semantic zooming, smoothly, through natural language documents. Zooming is a word we usually reserve for maps and images, but here you move by meaning rather than by magnification: zoom out and you see the whole idea in a few words, and zoom in and the same idea opens into fuller detail. This happens smoothly, not in fixed jumps, because the document stretches and contracts continuously and each size is still the whole document. The territory is ordinary prose rather than pictures, and the zoom is yours to move through it wherever you choose.",
+   "status": "ready",
+   "rev": 2,
+   "written_at": "2026-11-20T19:25:07+00:00",
+   "log_id": "20261120-112507-def0adee",
+   "model": "claude-opus-5-5",
+   "human_share": 0.0
+  },
+  "poetry:l9-y12@claude-opus-5-5": {
+   "spec": {
+    "mode": "poetry",
+    "lines": 9,
+    "syllables": 12
+   },
+   "text": "Stretch text allows you, as you read along, to zoom\nby meaning, not the way a lens enlarges sight,\nto stretch a line out further till its details bloom\nor fold it back again to one short sentence, tight.\n\nAnd all of this you do, smoothly, without a seam:\nno stepping stairs, no jumps, as detail ebbs and flows,\none steady glide, continuous as any stream,\nand yours to steer wherever your attention goes,\nthrough natural language documents, through prose.",
+   "status": "ready",
+   "rev": 2,
+   "written_at": "2026-11-20T19:27:07+00:00",
+   "log_id": "20261120-112707-bb8a1c00",
+   "model": "claude-opus-5-5",
+   "human_share": 0.0
+  },
+  "poetry:haiku@claude-opus-5-5": {
+   "spec": {
+    "mode": "poetry",
+    "lines": 3,
+    "syllables": 6,
+    "form": "haiku"
+   },
+   "text": "Stretch text lets you zoom\nsmoothly through a page of words.\nMeaning opens, folds.",
+   "status": "ready",
+   "rev": 2,
+   "written_at": "2026-11-20T19:30:57+00:00",
+   "log_id": "20261120-113057-939ade07",
+   "model": "claude-opus-5-5",
+   "human_share": 0.0
+  },
+  "poetry:limerick@claude-opus-5-5": {
+   "spec": {
+    "mode": "poetry",
+    "lines": 5,
+    "syllables": 8,
+    "form": "limerick"
+   },
+   "text": "With stretch text, you zoom in on detail\nBy meaning, and not by mere scale;\nYou glide, never leap,\nBetween shallow and deep,\nAnd it's prose, not a map, that you sail.",
+   "status": "ready",
+   "rev": 2,
+   "written_at": "2026-11-20T19:31:54+00:00",
+   "log_id": "20261120-113154-0675f222",
+   "model": "claude-opus-5-5",
+   "human_share": 0.0
+  }
+ },
+ "rev": 2,
+ "core": "",
+ "core_rev": 0,
+ "spent_usd": 0.0,
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cores": {
+  "claude-opus-5-5@2": "**THESIS**\nStretch text is a way of presenting writing that lets you zoom smoothly, by meaning rather than by magnification, through ordinary natural-language documents, moving continuously between more and less detail. The piece lands on that capability being in the reader's own hands (\"allows *you*\").\n\n**WHOLE PIECE IN ONE SENTENCE**\n1. Stretch text lets you zoom smoothly through a natural-language document by meaning, gliding between more and less detail.\n2. With stretch text, the semantic zooming we expect from visual interfaces becomes a smooth, continuous way to move through ordinary written documents.\n3. Stretch text brings smooth, meaning-based zooming to natural language documents, and puts it in the reader's control.\n\n**ARC**\n1. **Opening move:** names the subject outright, \"Stretch text,\" with no setup or definition.\n2. **Development:** states what it enables for the reader: \"allows you to do semantic zooming.\"\n3. **Turn:** the comma-fenced \"smoothly\" interrupts the sentence and adds the quality that distinguishes the idea. Zooming is continuous, not stepwise.\n4. **Close:** \"through natural language documents\" names the domain last. The force of the ending comes from placing a spatial or visual verb, *zooming*, onto prose. The sentence ends on the unexpected territory, words rather than images.\n\n**POINTS BY IMPORTANCE**\n1. **Stretch text is the subject.** *Must survive in one sentence.*\n2. **It enables semantic zooming**, meaning a change in the level of detail by meaning. *Must survive.*\n3. **The domain is natural language documents**, meaning prose and writing. *Must survive.*\n4. **\"Smoothly\":** the zoom is continuous. *Keep in one sentence if at all possible.* It is the piece's one qualifying adjective-in-spirit and its turn.\n5. **\"You\":** the reader is the one who zooms, so agency sits with the reader. Keep it where the length allows.\n6. **Implicit only, never stated:** zooming is a metaphor borrowed from maps and images, and a document can exist at many levels of detail. Longer versions may unpack these gently as explanations of the author's terms. They must not be presented as new claims.\n\n**VOICE**\n- **Person and tense:** second person (\"you\"), present tense, a single plain declarative.\n- **Register:** technical vocabulary (\"semantic zooming,\" \"natural language\") delivered casually (\"allows you to do\"). It does not hedge, hype, show off or joke.\n- **Rhythm:** the line runs straight, pauses briefly at the parenthetical \"smoothly,\" then lands. It is confident, compact and matter-of-fact.\n- **What it avoids:** examples, history, benefits, comparisons and calls to action.\n\n**SIGNATURE LANGUAGE**\n- \"stretch text\" (two words)\n- \"semantic zooming\"\n- \"smoothly\" (ideally set off by commas)\n- \"natural language documents\" (unhyphenated in the original)\n- \"allows you to\"\n\nAt longer sizes, reuse the zoom and stretch imagery, such as zoom in, zoom out, stretch and expand. These terms come from the author's own metaphor.\n\n**FORM**\nProse consisting of a single one-sentence paragraph of about 13 words. Longer versions should stay in short, plain paragraphs, one idea each, and lead with the subject.\n\n**ONE WORD**\n1. **Zoom:** the core action and the piece's central metaphor.\n2. **Stretch:** echoes the subject's name and the idea of text that expands and contracts.\n3. **Smoothly:** the quality that makes this zooming distinctive.\n\n**DO NOT**\n- **No history:** do not add context the author didn't give, such as Ted Nelson, 1967, hypertext lineage, or who invented it.\n- **No implementation details:** do not mention sliders, AI or LLMs, how documents are authored, or the UI.\n- **No benefits or morals:** do not add claims such as \"saves time,\" \"aids comprehension,\" or \"the future of reading.\"\n- **No change of stance:** do not hedge (\"might,\" \"could\") or hype (\"revolutionary\").\n- **Do not drop \"smoothly\"** or turn it into stepped levels or discrete summaries.\n- **Do not shift the domain** to images, code or maps. Maps and images may appear only as the source of the metaphor.\n- **Keep the reader's agency:** don't replace \"you\" with impersonal \"users\" or the passive voice.\n- **Spelling:** don't write \"stretchtext\" as one word.\n- **No self-reference:** don't add meta lines like \"as this text shows\" or \"you're doing it now.\" The author doesn't make that move.\n- **Keep the mood declarative:** don't recast the piece as a question or an instruction."
+ },
+ "spent_by_model": {},
+ "fill": {
+  "prose": "stops",
+  "poetry": "stops"
+ },
+ "prompt_version": 2
+}
